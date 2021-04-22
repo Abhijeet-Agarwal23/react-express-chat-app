@@ -1,3 +1,11 @@
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Chat, Join } from './components';
+
 export const App = () => {
-  return <div>React Express boilerplate with hot reloading</div>;
+  return (
+    <Router>
+      <Route path='/' exact component={Join} />
+      <Route path='/chat' component={Chat} />
+    </Router>
+  );
 };

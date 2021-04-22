@@ -4,4 +4,3 @@ dist
 # Optional npm cache directory
 .npm
 
-*-lock.json
